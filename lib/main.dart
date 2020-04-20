@@ -35,9 +35,8 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
@@ -61,30 +60,32 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                    ),
-                    SizedBox(
-                      width: 5.0,
-                    ),
-                    Text(
-                      'andy@gmail.com',
-                      style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 20.0,
-                        color: Colors.teal.shade900,
+                child: Padding(
+                  padding: EdgeInsets.all(25.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.email,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 5.0,
+                      ),
+                      Text(
+                        'andy@gmail.com',
+                        style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 20.0,
+                          color: Colors.teal.shade900,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               )
             ],
